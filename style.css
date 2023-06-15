@@ -1,0 +1,102 @@
+*
+{
+ padding: 0;
+ margin: 0;
+}
+body {
+ background: url(./img/unsplash2.jpg);
+ background-size: cover;
+ background-position: center;
+ box-sizing: border-box;
+ font-family: sans-serif;
+}
+.menu-bar {
+ background-color: blueviolet;
+ text-align: center;
+}
+.menu-bar ul {
+ display: inline-flex;
+ list-style: none;
+ color: white;
+}
+.menu-bar ul li {
+ width: 150px;
+ margin: 10px;
+ padding: 10px;
+}
+.menu-bar ul li a {
+ text-decoration: none;
+ color: white;
+}
+
+.active, .menu-bar ul li:hover {
+ background-color: rgb(194, 65, 233);
+ border-radius: 3px;
+}
+.menu-bar .fa {
+ margin-right: 5px;
+}
+.sub-menu-1 {
+ display: none;
+}
+
+.active, .menu-bar ul li:hover .sub-menu-1 {
+
+ display: block;
+ position: absolute;
+ margin-top: 10px;
+ margin-left: -20px;
+ background-color: rgb(250, 140, 208);
+}
+
+.active, .menu-bar ul li:hover .sub-menu-1 ul {
+ display: block;
+}
+.active, .menu-bar ul li:hover .sub-menu-1 ul li {
+ width: 180px;
+ padding: 10px;
+ border-bottom: 1px dotted;
+ background: transparent;
+ text-align: left;
+ border-radius: 0px;
+}
+
+.active, .menu-bar ul li:hover .sub-menu-1 ul li:last-child 
+{
+ border-bottom: none;
+}
+.active, .menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+ color: rgb(230, 181, 189);
+}
+.title-container {
+ background: url(./img/unsplash.jpg);
+ padding: 25px;
+}
+.title-container, h1 {
+ color:rgb(240, 175, 186);
+ 
+}
+.welcome-container {
+
+ justify-content: center;
+ padding: 50px;
+ padding-right: -50px;
+ width: 400px;
+ margin-left: 750px;
+ margin-top: 300px;
+ display: block;
+ align-items: center;
+ border-radius: 50%;
+ 
+}
+
+.welcome-container, .welcome-note {
+ color: rgb(131, 155, 235);
+ text-align: center;
+ 
+}
+h4 {
+ color: aliceblue;
+
+}
